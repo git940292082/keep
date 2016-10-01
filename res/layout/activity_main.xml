@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <FrameLayout
+        android:id="@+id/main_fram"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+    </FrameLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/main_groaup"
+        android:layout_alignParentLeft="true"
+        android:background="@color/Conlor.Main" />
+
+    <RadioGroup
+        android:id="@+id/main_groaup"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#fff"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio1"
+            style="@style/MainBtGroup"
+            android:checked="true"
+            android:drawableTop="@drawable/select_rd1"
+            android:text="运动 " />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/Conlor.Main" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            style="@style/MainBtGroup"
+            android:drawableTop="@drawable/select_rd2"
+            android:text="发现" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/Conlor.Main" />
+
+        <RadioButton
+            android:id="@+id/radio3"
+            style="@style/MainBtGroup"
+            android:drawableTop="@drawable/select_rd3"
+            android:text="我的" />
+    </RadioGroup>
+
+</RelativeLayout>
